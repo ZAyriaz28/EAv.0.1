@@ -1,0 +1,107 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.6; /* Mejora el interlineado para mayor legibilidad */
+    margin: 0;
+    padding: 0;
+    background-color: #e9f5e1; /* Color de fondo claro y natural */
+    color: #333; /* Texto de color gris oscuro */
+}
+
+header {
+    background-color: #1cc922; /* Color verde para el encabezado */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px; /* Aumentar tamaño de letra en los enlaces */
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 32px; /* Aumentar tamaño de letra en el logo */
+}
+
+main {
+    padding: 20px;
+}
+
+.content {
+    background-color: white; /* Fondo blanco para el contenido */
+    border-radius: 10px;
+    padding: 40px; /* Mayor padding para más espacio interno */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para el contenido */
+}
+
+h2 {
+    color: #4CAF50; /* Color verde para los encabezados */
+    margin-top: 20px; /* Mayor espacio arriba */
+    margin-bottom: 15px; /* Mayor espacio abajo */
+    font-size: 28px; /* Aumentar tamaño de letra */
+}
+
+h3 {
+    color: #4CAF50; /* Color verde para los encabezados secundarios */
+    margin-top: 20px; /* Mayor espacio arriba */
+    margin-bottom: 10px; /* Mayor espacio abajo */
+    font-size: 24px; /* Aumentar tamaño de letra */
+}
+
+h4 {
+    color: #333; /* Color gris oscuro para los encabezados terciarios */
+    margin-top: 15px; /* Espacio arriba */
+    margin-bottom: 5px; /* Espacio abajo */
+    font-size: 20px; /* Aumentar tamaño de letra */
+}
+
+p {
+    font-size: 18px; /* Aumentar tamaño de letra en párrafos */
+    margin-bottom: 15px; /* Espacio entre párrafos */
+    text-align: justify; /* Justifica el texto */
+}
+
+ul {
+    margin-bottom: 20px; /* Espacio entre listas */
+}
+
+.project-list li, .resources li {
+    margin-bottom: 15px; /* Espacio entre elementos de la lista */
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #4CAF50; /* Color verde para el pie de página */
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.img-responsive {
+    max-width: 100%; /* Asegura que la imagen se ajuste al contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+a {
+    color: #4CAF50; /* Color de los enlaces en el contenido */
+    text-decoration: none; /* Sin subrayado */
+}
+
+a:hover {
+    text-decoration: underline; /* Subrayado en hover */
+}

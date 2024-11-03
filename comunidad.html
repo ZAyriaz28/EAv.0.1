@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Participación Comunitaria - Acción Ambiental</title>
+    <link rel="stylesheet" href="css/comunidad.css">
+</head>
+<body>
+    <style>
+        body {
+            background-image: url("imagenes/fondo.jpeg");
+            background-size: cover; /* Para que la imagen cubra todo el fondo */
+            background-repeat: no-repeat; /* Para evitar que la imagen se repita */
+            background-position: center; /* Para centrar la imagen */
+        }
+    </style>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="educacion.html">Educación</a></li>
+                <li><a href="comunidad.html">Participación Comunitaria</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="logo">
+            <h1></h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="content">
+            <div class="media">
+                <img src="imagenes/Río.jpg" alt="Voluntariado en acción">
+                <!-- Imagen adicional debajo de la primera -->
+                <img src="imagenes/INTERTEX.Liderazgo-ambiental-2-2.jpg" alt="Limpieza comunitaria">
+                <!-- Otra imagen más abajo -->
+                <img src="imagenes/educacion.jpeg" alt="Educación sobre residuos">
+            </div>
+            <div class="text-content">
+                <h2>¡Únete a las actividades de voluntariado!</h2>
+                <p>Ayuda a tu comunidad en la gestión de residuos participando en nuestras actividades de voluntariado. A continuación, selecciona el día, la hora y la fecha en la que estarás disponible para ayudar.</p>
+
+                <form id="voluntariado-form">
+                    <label for="dia">Día:</label>
+                    <select id="dia" name="dia">
+                        <option value="Lunes">Lunes</option>
+                        <option value="Martes">Martes</option>
+                        <option value="Miércoles">Miércoles</option>
+                        <option value="Jueves">Jueves</option>
+                        <option value="Viernes">Viernes</option>
+                        <option value="Sábado">Sábado</option>
+                        <option value="Domingo">Domingo</option>
+                    </select>
+
+                    <label for="hora">Hora:</label>
+                    <input type="time" id="hora" name="hora" required>
+
+                    <label for="fecha">Fecha:</label>
+                    <input type="date" id="fecha" name="fecha" required>
+
+                    <button type="submit">¡Yo participo!</button>
+                </form>
+            </div>
+
+            <div class="participantes">
+                <h3>Voluntarios que ya han participado:</h3>
+                <ul>
+                    <li>Juan Pérez - Martes, 10:00 AM, 2024-10-05</li>
+                    <li>Ana López - Sábado, 2:00 PM, 2024-10-07</li>
+                    <li>Roberto Sánchez - Jueves, 9:00 AM, 2024-10-10</li>
+                    <li>Laura Martínez - Lunes, 11:00 AM, 2024-10-12</li>
+                    <li>Carlos Gómez - Viernes, 4:00 PM, 2024-10-13</li>
+                    <li>María Hernández - Miércoles, 3:00 PM, 2024-10-14</li>
+                    <li>Jorge Ramírez - Domingo, 1:00 PM, 2024-10-15</li>
+                    <li>Daniela Rivas - Sábado, 9:00 AM, 2024-10-16</li>
+                    <li>Andrés Castillo - Jueves, 8:00 AM, 2024-10-17</li>
+                    <li>Sofía Vargas - Lunes, 5:00 PM, 2024-10-18</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Acción Ambiental. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
