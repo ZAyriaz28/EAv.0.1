@@ -10,197 +10,67 @@ body {
     background-color: #b7f0bc;
     color: #333;
     line-height: 1.6;
+    margin: 0;
 }
 
-h1, h2, h3, p {
-    margin-bottom: 0.5rem;
-}
-
-header {
-    background-color: #20b127;
-    padding: 1rem 1rem;
-}
-
+/* Ajustes para la cabecera */
 header .container {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column; /* Cambiar a columna en móviles */
     align-items: center;
-}
-
-header h1 {
-    color: #fff;
-    font-size: 2rem;
-    text-transform: uppercase;
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
+    flex-direction: row; /* Línea horizontal en pantallas grandes */
 }
 
-nav ul li {
-    margin-left: 20px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1rem;
-    padding: 10px 15px;
-    background-color: #1b5e20;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-nav ul li a:hover {
-    background-color: #45c2d8;
-}
-
-/* Sección hero */
-#hero {
-    background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepik.es%2Ffotos-vectores-gratis%2Ffondo-plantas&psig=AOvVaw2_8YB5_FZTl5jmbRI82hVB&ust=1729204301260000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLCmzJ36k4kDFQAAAAAdAAAAABAJ');
-    background-size: cover;
-    background-position: center;
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-    position: relative;
-}
-
-#hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-#hero .hero-content {
-    z-index: 1;
-    max-width: 600px;
-    padding: 2rem;
-}
-
-#hero h2 {
-    font-size: 3rem;
-    text-transform: uppercase;
-    margin-bottom: 1rem;
-}
-
-#hero p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-}
-
-.btn-main {
-    display: inline-block;
-    padding: 12px 25px;
-    font-size: 1.2rem;
-    background-color: #ffa000;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.btn-main:hover {
-    background-color: #ffbe0b;
-}
-
-/* Sección de características */
-#features {
-    display: flex;
-    justify-content: space-around;
-    padding: 3rem 0;
-    background-color: #1b5e20;
-}
-
-#features .feature {
-    margin: 0px 15px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    padding: 2rem;
-    text-align: center;
-    transition: transform 0.3s ease;
-}
-
-#features .feature:hover {
-    transform: translateY(-10px);
-}
-
-#features h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-}
-
-#features p {
-    font-size: 1rem;
-}
-
-/* Footer */
-footer {
-    background-color: #20b127;
-    color: white;
-    padding: 10px 0;
-}
-
-footer .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-footer nav ul {
-    list-style: none;
-    display: flex;
-}
-
-footer nav ul li {
-    margin-left: 20px;
-}
-
-footer nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1rem;
-    transition: color 0.3s ease;
-}
-
-footer nav ul li a:hover {
-    color: #ffffff;
-}
-
-footer p {
-    font-size: 0.9rem;
-}
-
-/* Media Queries para diseño responsive */
 @media (max-width: 768px) {
-    #features {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    #features .feature {
-        margin-bottom: 2rem;
-    }
-
     header .container {
-        flex-direction: column;
+        align-items: flex-start; /* Ajustar a la izquierda en pantallas pequeñas */
     }
 
     nav ul {
-        flex-direction: column;
+        flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+        align-items: flex-start;
+        width: 100%; /* Asegurar que ocupe toda la pantalla */
+        padding: 0;
     }
 
     nav ul li {
-        margin-left: 0;
-        margin-bottom: 10px;
+        margin-bottom: 10px; /* Espaciado entre enlaces */
     }
+
+    #hero h2 {
+        font-size: 2rem; /* Reducir tamaño de título en móviles */
+    }
+
+    #hero p {
+        font-size: 1rem; /* Reducir tamaño de texto en móviles */
+    }
+
+    #features {
+        flex-direction: column; /* Columnas en móviles */
+        gap: 20px; /* Espaciado entre características */
+    }
+
+    .feature {
+        padding: 1rem; /* Ajustar padding en móviles */
+    }
+}
+
+/* Ajustes generales */
+.btn-main {
+    width: auto; /* Asegurar que el botón se ajuste bien en móviles */
+    font-size: 1rem; /* Reducir tamaño de fuente en móviles */
+}
+
+footer .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+footer nav ul {
+    flex-direction: column; /* Nav en columnas en el footer */
+    gap: 10px;
 }
